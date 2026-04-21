@@ -69,6 +69,7 @@ using namespace std;
 
 
 
-
+	// Este menu puede ser modificasdo para agregar o eliminar opciones dependiendo de las necesidades del proyecto.
+    // Cada opción puede ser implementada con funciones específicas para manejar la lógica de la tienda de ropa, como registrar clientes, productos, realizar ventas y mostrar el historial de ventas.
 
 
