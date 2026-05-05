@@ -127,28 +127,36 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Autenticacion.cpp" />
     <ClCompile Include="Cliente.cpp" />
     <ClCompile Include="IRepoClientes.cpp" />
     <ClCompile Include="IRepoProducto.cpp" />
+    <ClCompile Include="IRepoUsuario.cpp" />
     <ClCompile Include="IRepoVenta.cpp" />
     <ClCompile Include="MemoriaCliente.cpp" />
     <ClCompile Include="MemoriaProducto.cpp" />
+    <ClCompile Include="MemoriaUsuario.cpp" />
     <ClCompile Include="MemoriaVenta.cpp" />
     <ClCompile Include="OperacionesTienda.cpp" />
     <ClCompile Include="Producto.cpp" />
     <ClCompile Include="TiendaProyecto.cpp" />
+    <ClCompile Include="Usuario.cpp" />
     <ClCompile Include="Venta.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Autenticacion.h" />
     <ClInclude Include="Cliente.h" />
     <ClInclude Include="IRepoClientes.h" />
     <ClInclude Include="IRepoProducto.h" />
+    <ClInclude Include="IRepoUsuario.h" />
     <ClInclude Include="IRepoVenta.h" />
     <ClInclude Include="MemoriaCliente.h" />
     <ClInclude Include="MemoriaProducto.h" />
+    <ClInclude Include="MemoriaUsuario.h" />
     <ClInclude Include="MemoriaVenta.h" />
     <ClInclude Include="OperacionesTienda.h" />
     <ClInclude Include="Producto.h" />
+    <ClInclude Include="Usuario.h" />
     <ClInclude Include="Venta.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
