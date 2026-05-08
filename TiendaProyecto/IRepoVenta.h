@@ -6,6 +6,7 @@
 class IRepoVenta {
 public:
     virtual void agregarVenta(Venta v) = 0;
+    virtual bool eliminarVenta(int id) = 0;
 };
 
 #endif

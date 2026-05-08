@@ -7,6 +7,7 @@ class IRepoUsuario {
 public:
     virtual void registrar(Usuario u) = 0;
     virtual bool autenticar(string user, string pass) = 0;
+	virtual bool eliminarUsuario(string user) = 0;
 };
 
 #endif

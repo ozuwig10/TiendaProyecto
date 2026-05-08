@@ -40,6 +40,18 @@ public:
         repo->registrar(Usuario(u, p));
         cout << "Usuario registrado correctamente\n";
     }
+
+     void eliminarUsuario() {
+        string u;
+        
+        cout << "Usuario a eliminar: "; cin >> u;
+        if (repo->eliminarUsuario(u)) {
+            cout << "Usuario eliminado correctamente\n";
+        }
+        else {
+            cout << "Usuario no encontrado\n";
+        }
+	 }
 };
 
 #endif

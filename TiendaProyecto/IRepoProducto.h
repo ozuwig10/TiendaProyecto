@@ -7,6 +7,7 @@ class IRepoProducto {
 public:
     virtual void agregarProducto(Producto p) = 0;
     virtual Producto* buscarProducto(int id) = 0;
+    virtual bool eliminarProducto(int id) = 0;
 };
 
 #endif

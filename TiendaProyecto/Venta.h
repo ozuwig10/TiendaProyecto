@@ -28,6 +28,9 @@ public:
         }
         return total;
     }
+    int getIdVenta() {
+        return idVenta;
+    }
 };
 
 #endif

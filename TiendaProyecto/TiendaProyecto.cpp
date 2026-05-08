@@ -43,7 +43,8 @@ int main() {
         cout << "4. Realizar venta" << endl;
         cout << "5. Ver ventas" << endl;
         cout << "6. Registrar Usuario" << endl;
-        cout << "7. Salir" << endl;
+        cout << "7. Menu de eliminaciones" << endl;
+        cout << "8. Salir" << endl;
         cout << "Seleccione una opcion: ";
         cin >> opcion;
 
@@ -78,15 +79,46 @@ int main() {
             auth.registrarUsuario();
             break;
 
-        case 7:
-            cout << "\nSaliendo del sistema..." << endl;
+        case 7: {
+
+            int opcionEliminar;
+
+            cout << "\n--- ELIMINACIONES ---" << endl;
+            cout << "1. Eliminar cliente" << endl;
+            cout << "2. Eliminar producto" << endl;
+            cout << "3. Eliminar venta" << endl;
+            cout << "4. Eliminar usuario" << endl;
+            cout << "Seleccione una opcion: ";
+            cin >> opcionEliminar;
+
+            if (opcionEliminar == 1) {
+                op.eliminarCliente();
+            }
+            else if (opcionEliminar == 2) {
+                op.eliminarProducto();
+            }
+            else if (opcionEliminar == 3) {
+                op.eliminarVenta();
+            }
+            else if (opcionEliminar == 4) {
+                auth.eliminarUsuario();
+            }
+            else {
+                cout << "Opcion invalida\n";
+            }
+
+            break;
+        }
+
+        case 8:
+            cout << "Saliendo..." << endl;
             break;
 
         default:
             cout << "\nOpcion invalida, intente de nuevo." << endl;
         }
 
-    } while (opcion != 7);
+    } while (opcion != 8);
 
     return 0;
 }

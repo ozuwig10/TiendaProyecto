@@ -7,6 +7,7 @@ class IRepoClientes {
 public:
     virtual void agregarCliente(Cliente c) = 0;
     virtual Cliente* buscarCliente(int id) = 0;
+    virtual bool eliminarCliente(int id) = 0;
 };
 
 #endif

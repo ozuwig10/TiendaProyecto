@@ -151,7 +151,50 @@ public:
         }
     }
 
+    void eliminarCliente() {
 
+        int id;
+
+        cout << "ID del cliente a eliminar: ";
+        cin >> id;
+
+        if (repoClientes->eliminarCliente(id)) {
+            cout << "Cliente eliminado correctamente\n";
+        }
+        else {
+            cout << "Cliente no encontrado\n";
+        }
+    }
+
+    void eliminarProducto() {
+
+        int id;
+
+        cout << "ID del producto a eliminar: ";
+        cin >> id;
+
+        if (repoProductos->eliminarProducto(id)) {
+            cout << "Producto eliminado correctamente\n";
+        }
+        else {
+            cout << "Producto no encontrado\n";
+        }
+    }
+
+    void eliminarVenta() {
+
+        int id;
+
+        cout << "ID de la venta a eliminar: ";
+        cin >> id;
+
+        if (repoVentas->eliminarVenta(id)) {
+            cout << "Venta eliminada correctamente\n";
+        }
+        else {
+            cout << "Venta no encontrada\n";
+        }
+    }
 };
 
 #endif

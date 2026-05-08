@@ -17,6 +17,19 @@ public:
     vector<Venta>& getVentas() {
         return ventas;
     }
+
+    bool eliminarVenta(int id) override {
+
+        for (auto it = ventas.begin(); it != ventas.end(); it++) {
+
+            if (it->getIdVenta() == id) {
+                ventas.erase(it);
+                return true;
+            }
+        }
+
+        return false;
+    }
 };
 
 #endif

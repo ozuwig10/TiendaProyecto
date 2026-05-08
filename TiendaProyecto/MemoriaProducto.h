@@ -36,6 +36,19 @@ public:
     vector<Producto>& getProductos() {
         return productos;
     }
+
+    bool eliminarProducto(int id) override {
+
+        for (auto it = productos.begin(); it != productos.end(); it++) {
+
+            if (it->getId() == id) {
+                productos.erase(it);
+                return true;
+            }
+        }
+
+        return false;
+    }
 };
 
 #endif

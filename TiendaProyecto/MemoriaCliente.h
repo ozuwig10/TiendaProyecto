@@ -21,6 +21,21 @@ public:
         }
         return nullptr;
     }
+
+    bool eliminarCliente(int id) override {
+
+        for (auto it = clientes.begin(); it != clientes.end(); it++) {
+
+            if (it->getId() == id) {
+                clientes.erase(it);
+                return true;
+            }
+        }
+
+        return false;
+    }
 };
+
+
 
 #endif
